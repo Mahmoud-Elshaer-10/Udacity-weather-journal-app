@@ -11,7 +11,7 @@ let newDate = d.getMonth() + 1 + "." + d.getDate() + "." + d.getFullYear();
 // Personal API Key for OpenWeatherMap API
 const apiKey = "6fd48113cf33e8f31b3467f9acd5a9b6";
 
-btn.onclick = async () => {
+btn.addEventListener("click", async () => {
   try {
     const feelings = document.getElementById("feelings").value;
     const zipCode = document.getElementById("zip").value;
@@ -36,7 +36,7 @@ btn.onclick = async () => {
   } catch (error) {
     console.log(error);
   }
-};
+});
 
 // Event listener to add function to existing HTML DOM element
 
