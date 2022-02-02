@@ -21,6 +21,7 @@ body {
 
 .entry {
   background: rgba(59, 74, 107, 0.4);
+  margin-top: 200px;
 }
 
 #entryHolder {
