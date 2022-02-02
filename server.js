@@ -24,6 +24,11 @@ app.listen(port, () => {
   console.log(`server is running on http://localhost:${port}`);
 });
 
+app.post("/postRoute", (req, res) => {
+  projectData = { ...req.body };
+  res.send();
+});
+
 app.get("/getRoute", (req, res) => {
   res.send(projectData);
 });
