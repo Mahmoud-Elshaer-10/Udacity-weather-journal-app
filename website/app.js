@@ -42,7 +42,7 @@ btn.addEventListener("click", async () => {
 
     // updating UI
     dateDiv.innerHTML = `Date is ${newDate}`;
-    tempDiv.innerHTML = `Temperature is: ${getData.temp} celsius`;
+    tempDiv.innerHTML = `Temperature is: ${Math.round(getData.temp)} celsius`;
     contentDiv.innerHTML = `Feelings: ${feelings}`;
   } catch (error) {
     console.log(error);
